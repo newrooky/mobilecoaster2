@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>Coaster</title>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+  <link rel="stylesheet" href="my.css" />
+  <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+  <script src="my.js"></script>
+
+  <!-- User-generated css -->
+  <style>
+    H4{
+        color: white;
+        font-weight: normal;
+        padding-left: 15px;
+        text-shadow: none;
+        text-transform: uppercase;
+        text-align: center;
+        }
+    #back {
+        position:fixed;
+        bottom:15px;
+        left:15px;
+    }
+    #gridmain {
+        width:320px;
+        margin-left: auto;
+        margin-right: auto;  
+    }
+    #coaster {
+        left: 50%;
+        margin-left: -2.5in;
+        margin-top: -2.5in;
+        position: fixed;
+        top: 50%;
+        width: 5in;
+    }
+    #coasterbutton{
+        margin-bottom:10px;
+    }
+    #athing{
+        position:fixed;
+        bottom:10px;
+        right: 50%;
+        margin-right: -87px;
+    }
+    #choosetitle{
+        margin:8px;
+    }
+  </style>
+
+  <!-- User-generated js -->
+  <script>
+
+    $(function() {
+        
+    });
+
+  </script>
+
+<script>
+<!--
+$('div.ui-page').live("swipeleft", function(){
+var nextpage = $(this).next('div[data-role="page"]');
+if (nextpage.length > 0) {
+$.mobile.changePage(nextpage, "fade", false, true);
+}
+});
+$('div.ui-page').live("swiperight", function(){
+var prevpage = $(this).prev('div[data-role="page"]');
+if (prevpage.length > 0) {
+$.mobile.changePage(prevpage, {transition: "fade",
+reverse: true}, true, true);
+}
+});
+// -->
+</script>
+
+</head>
+<body>
+  <!-- Home -->
+  <div data-role="page" id="page3" style="background: #000 url('assets/Wood-background_small.jpg') no-repeat center center">
+      <div data-role="content" style="padding: 0px">
+          <div style=" text-align:center" id="choosetitle">
+              <img id="choosetitle" style="width: 200px; height: px" src="assets/Choose-A-CoasterB.png">
+          </div>
+          <div id="gridmain" class="ui-grid-a gridmain">
+              <div class="ui-block-a">
+                  <a href="#page5" id="coasterbutton" data-transition="flip">
+                      <div style=" text-align:center">
+                          <img id="coasterbutton" style="width: 140px; height: px" src="assets/Coaster_Amsterdam.png">
+                      </div>
+                  </a>
+                  <a href="#page7" id="coasterbutton" data-transition="flip">
+                      <div style=" text-align:center">
+                          <img id="coasterbutton" style="width: 140px; height: px" src="assets/Coaster_Carling.png">
+                      </div>
+                  </a>
+              </div>
+              <div class="ui-block-b">
+                  <a href="#page6" id="coasterbutton" data-transition="flip">
+                      <div style=" text-align:center">
+                          <img id="coasterbutton" style="width: 140px; height: px" src="assets/Coaster_Creature.png">
+                      </div>
+                  </a>
+                  <a href="#page8" id="coasterbutton" data-transition="flip">
+                      <div style=" text-align:center">
+                          <img id="coasterbutton" style="width: 140px; height: px" src="assets/Coaster_Safe.png">
+                      </div>
+                  </a>
+              </div>
+              <div class="ui-block-a">
+                  <div>
+                      <p>
+                          <b>
+                              &nbsp;
+                          </b>
+                      </p>
+                  </div>
+              </div>
+              <div class="ui-block-b">
+              </div>
+              <div class="ui-block-a">
+              </div>
+              <div class="ui-block-b">
+              </div>
+          </div>
+          <a href="http://welcometocreature.com" id="athing">
+              <div style=" text-align:center">
+                  <img id="athing" style="width: 175px; height: px" src="assets/A-Thing-By-Small.png">
+              </div>
+          </a>
+      </div>
+  </div>
+  <!-- Coaster 1 -->
+  <div data-role="page" id="page5" style="background: #000 url('assets/amsterdam.jpg') no-repeat center center">
+      <div data-role="content" style="padding: 0px">
+          <div style=" text-align:center" id="coaster">
+              <!-- <img id="coaster" style="width: px; height: px" src="assets/Coaster_Amsterdam.png"> -->
+          </div>
+          <a href="#page3" id="back">
+              <div style="">
+                  <img id="back" style="width: 30px; height: 30px" src="assets/logout.png">
+              </div>
+          </a>
+      </div>
+  </div>
+  <!-- Coaster 2 -->
+  <div data-role="page" id="page6" style="background: #000 url('assets/creature.jpg') no-repeat center center">
+      <div data-role="content" style="padding: 0px">
+          <div style=" text-align:center" id="coaster">
+              <!-- <img id="coaster" style="width: px; height: px" src="assets/Coaster_Creature.png"> -->
+          </div>
+          <a href="#page3" id="back">
+              <div style="">
+                  <img id="back" style="width: 30px; height: 30px" src="assets/logout.png">
+              </div>
+          </a>
+      </div>
+  </div>
+  <!-- Coaster 3 -->
+  <div data-role="page" id="page7" style="background: #000 url('assets/carling.jpg') no-repeat center center">
+      <div data-role="content" style="padding: 0px">
+          <div style=" text-align:center" id="coaster">
+              <!-- <img id="coaster" style="width: px; height: px" src="assets/Coaster_Carling.png"> -->
+          </div>
+          <a href="#page3" id="back">
+              <div style="">
+                  <img id="back" style="width: 30px; height: 30px" src="assets/logout.png">
+              </div>
+          </a>
+      </div>
+  </div>
+  <!-- Coaster 4 -->
+  <div data-role="page" id="page8" style="background: #000 url('assets/safe.jpg') no-repeat center center">
+      <div data-role="content" style="padding: 0px">
+          <div style=" text-align:center" id="coaster">
+              <!-- <img id="coaster" style="width: px; height: px" src="assets/Coaster_Safe.png"> -->
+          </div>
+          <a href="#page3" id="back">
+              <div style="">
+                  <img id="back" style="width: 30px; height: 30px" src="assets/logout.png">
+              </div>
+          </a>
+      </div>
+  </div>
+
+  
+</body>
+</html>
