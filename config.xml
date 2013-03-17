@@ -56,7 +56,7 @@
     <icon src="icon.png" />
 
     <!-- Define app splash screen for each platform. -->
-    <gap:splash src="splash.png" />
+    <gap:splash src="splash.jpg" />
     <!--
         Define access to external domains.
 
