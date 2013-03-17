@@ -57,6 +57,7 @@
 
     <!-- Define app splash screen for each platform. -->
     <gap:splash src="splash.jpg" />
+    <preference name="splash-screen-duration" value="3000" />
     <!--
         Define access to external domains.
 
