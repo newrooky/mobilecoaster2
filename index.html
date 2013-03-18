@@ -5,11 +5,11 @@
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <title>Coaster</title>
-  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+  <title>Mobile Coaster</title>
+  <link rel="stylesheet" href="jquery.mobile-1.2.0.min.css" />
   <link rel="stylesheet" href="my.css" />
-  <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-  <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+  <script src="jquery-1.7.2.min.js"></script>
+  <script src="jquery.mobile-1.2.0.min.js"></script>
   <script src="my.js"></script>
 
   <!-- User-generated css -->
@@ -54,12 +54,15 @@
     }
   </style>
 
-  <!-- User-generated js -->
-  <script>
+<script type='application/javascript' src='fastclick.js'></script>
 
-    $(function() {
-        
-    });
+  <!-- User-generated js -->
+ <script type="application/javascript">
+
+      window.addEventListener('load', function() {
+        new FastClick(document.body);
+    }, false);
+
 
   </script>
 
@@ -68,13 +71,13 @@
 $('div.ui-page').live("swipeleft", function(){
 var nextpage = $(this).next('div[data-role="page"]');
 if (nextpage.length > 0) {
-$.mobile.changePage(nextpage, "fade", false, true);
+$.mobile.changePage(nextpage, "slide", false, true);
 }
 });
 $('div.ui-page').live("swiperight", function(){
 var prevpage = $(this).prev('div[data-role="page"]');
 if (prevpage.length > 0) {
-$.mobile.changePage(prevpage, {transition: "fade",
+$.mobile.changePage(prevpage, {transition: "slide",
 reverse: true}, true, true);
 }
 });
